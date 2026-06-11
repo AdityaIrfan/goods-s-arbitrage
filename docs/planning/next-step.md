@@ -1,0 +1,2 @@
+- Jadwal scrapping
+- adjust bagian silver layer (load) dan gold layer (analyze)

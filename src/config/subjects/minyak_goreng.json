@@ -1,0 +1,47 @@
+{
+    "subject": "minyak goreng",
+    "parse": {
+        "brands": ["bimoli", "sania", "tropical", "tropicana", "filma", "fortune", "curah"],
+        "locations": ["surabaya", "sidoarjo", "gresik", "mojokerto", "malang", "jakarta", "bandung", "semarang", "jogja", "yogyakarta"],
+        "units": {
+            "liter": "liter",
+            "literan": "liter",
+            "lt": "liter",
+            "l": "liter",
+            "jeriken": "jeriken",
+            "jrk": "jeriken",
+            "kg": "kg",
+            "kilogram": "kg",
+            "karton": "karton",
+            "dus": "karton",
+            "pcs": "pcs",
+            "botol": "botol",
+            "sachet": "sachet"
+        }
+    },
+    "normalize": {
+        "target_unit": "liter",
+        "unit_conversion": {
+            "liter": 1,
+            "jeriken": 18,
+            "kg": 1.087
+        }
+    },
+    "validate": {
+        "price_per_liter_min": 10000,
+        "price_per_liter_max": 50000
+    },
+    "analyze": {
+        "estimated_shipping_per_liter": 1500
+    },
+    "ingest": {
+        "query_strategy": {
+            "facebook": "keyword",
+            "facebook_marketplace": "keyword",
+            "twitter": "hashtag",
+            "indotrading": "keyword",
+            "tokopedia_grosir": "kategori",
+            "shopee_grosir": "kategori"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
+# IDE
+.idea/
+
+# Pipeline output (regenerated via `python -m src.main`)
+data/

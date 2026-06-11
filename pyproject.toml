@@ -1,0 +1,18 @@
+[project]
+name = "goods-s-arbitrage"
+version = "0.1.0"
+description = "Medallion-architecture pipeline for scraping and analyzing goods prices to find arbitrage opportunities"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0",
+    "pandera>=0.31",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
